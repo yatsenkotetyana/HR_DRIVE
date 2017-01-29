@@ -63,7 +63,7 @@ datasetSerial_firm <- dataset  %>%
 # Form factor from serial_number
 datasetSerial_firm$serial_number   <- as.character(datasetSerial_firm$serial_number)
 
-# Cound and arraned by this number all records for failure disk
+# Cound and arraned by this number all records for failure (working) disk
 # (all recoreds before failure)
 datasetSerial_N_firm <- datasetSerial_firm   %>% 
                         count(serial_number) %>% 
